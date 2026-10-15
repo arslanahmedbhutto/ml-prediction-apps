@@ -1,0 +1,8 @@
+# Pinned: models/*.joblib are pickles tied to this version
+scikit-learn==1.9.1
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.9
+joblib>=1.4
+streamlit>=1.40
+pytest>=8

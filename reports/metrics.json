@@ -1,0 +1,208 @@
+{
+  "trained_at": "2026-10-15T22:42:45+00:00",
+  "seed": 42,
+  "tasks": {
+    "gpa": {
+      "task": "Student GPA",
+      "rows": 2392,
+      "best_model": "Linear regression",
+      "results": [
+        {
+          "model": "Linear regression",
+          "cv_rmse": 0.19747989116701473,
+          "cv_rmse_std": 0.007457476639021281,
+          "cv_r2": 0.9534608025499948,
+          "test_rmse": 0.1966251293567091,
+          "test_mae": 0.15529483485748097,
+          "test_r2": 0.9532471681022928
+        },
+        {
+          "model": "Ridge",
+          "cv_rmse": 0.19748002360768208,
+          "cv_rmse_std": 0.007459970251672387,
+          "cv_r2": 0.9534607730385833,
+          "test_rmse": 0.19663448221136212,
+          "test_mae": 0.155303641413917,
+          "test_r2": 0.9532427202187223
+        },
+        {
+          "model": "Gradient boosting",
+          "cv_rmse": 0.21032030205868782,
+          "cv_rmse_std": 0.004313466533447226,
+          "cv_r2": 0.9472209487597544,
+          "test_rmse": 0.20905972882129817,
+          "test_mae": 0.1633618764400258,
+          "test_r2": 0.947146878145534
+        },
+        {
+          "model": "Random forest",
+          "cv_rmse": 0.24177700017247167,
+          "cv_rmse_std": 0.005088660167443206,
+          "cv_r2": 0.930129451768433,
+          "test_rmse": 0.24206832042679075,
+          "test_mae": 0.18789281566961183,
+          "test_r2": 0.9291392421099732
+        },
+        {
+          "model": "Mean baseline",
+          "cv_rmse": 0.9161674537136146,
+          "cv_rmse_std": 0.019743307375204917,
+          "cv_r2": -0.0004823880787257817,
+          "test_rmse": 0.909710314131606,
+          "test_mae": 0.7659820305382309,
+          "test_r2": -0.0007742367336118772
+        }
+      ],
+      "permutation_importance_r2_drop": {
+        "Absences": 1.7032,
+        "ParentalSupport": 0.0765,
+        "StudyTimeWeekly": 0.0606,
+        "Tutoring": 0.0279,
+        "Sports": 0.0218,
+        "Extracurricular": 0.021,
+        "Music": 0.006,
+        "Gender": 0.0002,
+        "Age": 0.0001,
+        "Volunteering": 0.0,
+        "ParentalEducation": 0.0,
+        "Ethnicity": -0.0
+      },
+      "residual_sd": 0.19681640309431336,
+      "absences_only_test_r2": 0.847774631744824,
+      "absences_corr": -0.9193135764208641,
+      "coefficients_per_unit": {
+        "Age": -0.005734243241197672,
+        "Gender": 0.01051585935898095,
+        "Ethnicity": 0.004744487529099597,
+        "ParentalEducation": 0.0001251021328406084,
+        "StudyTimeWeekly": 0.029038803522365812,
+        "Absences": -0.09951730880146009,
+        "Tutoring": 0.2582615451687427,
+        "ParentalSupport": 0.14783849436228463,
+        "Extracurricular": 0.18954633905687646,
+        "Sports": 0.18499082696953975,
+        "Music": 0.1524842742141961,
+        "Volunteering": -0.005281715690179381
+      }
+    },
+    "house": {
+      "task": "House price",
+      "rows": 489,
+      "best_model": "Linear regression",
+      "results": [
+        {
+          "model": "Linear regression",
+          "cv_rmse": 29.264928286024553,
+          "cv_rmse_std": 1.3185708630287987,
+          "cv_r2": 0.9991341482623385,
+          "test_rmse": 28.546678696754434,
+          "test_mae": 24.51067687606272,
+          "test_r2": 0.9992401741716215
+        },
+        {
+          "model": "Ridge",
+          "cv_rmse": 29.265128016470054,
+          "cv_rmse_std": 1.3172029537719125,
+          "cv_r2": 0.9991341286267869,
+          "test_rmse": 28.544498467210808,
+          "test_mae": 24.508226719918987,
+          "test_r2": 0.9992402902293581
+        },
+        {
+          "model": "Gradient boosting",
+          "cv_rmse": 91.31868193408103,
+          "cv_rmse_std": 9.06347229631673,
+          "cv_r2": 0.9914166092621217,
+          "test_rmse": 74.1425643039135,
+          "test_mae": 57.4177777538811,
+          "test_r2": 0.994874478218872
+        },
+        {
+          "model": "Random forest",
+          "cv_rmse": 142.93979949613754,
+          "cv_rmse_std": 5.645356779618649,
+          "cv_r2": 0.9792930384423857,
+          "test_rmse": 127.69437420137197,
+          "test_mae": 99.94459531539876,
+          "test_r2": 0.9847964009955993
+        },
+        {
+          "model": "Mean baseline",
+          "cv_rmse": 1011.2553644912286,
+          "cv_rmse_std": 29.61871316059674,
+          "cv_r2": -0.03203808799075301,
+          "test_rmse": 1042.6107719803945,
+          "test_mae": 883.1575499765124,
+          "test_r2": -0.01355493750808523
+        }
+      ],
+      "permutation_importance_r2_drop": {
+        "Area": 1.4123,
+        "Bedrooms": 0.3616,
+        "Age": 0.0989
+      },
+      "residual_sd": 28.643757389674125,
+      "coefficients_per_unit": {
+        "Area": 1.5019081824986902,
+        "Bedrooms": 199.44534713108825,
+        "Age": -50.02398743754622
+      }
+    },
+    "salary": {
+      "task": "Salary",
+      "rows": 35,
+      "best_model": "Ridge",
+      "results": [
+        {
+          "model": "Ridge",
+          "cv_rmse": 5815.883962764949,
+          "cv_rmse_std": 1331.6269312688557,
+          "cv_r2": 0.9584664311885763,
+          "test_rmse": 7511.10254526935,
+          "test_mae": 6755.977440373516,
+          "test_r2": 0.8901482834475084
+        },
+        {
+          "model": "Linear regression",
+          "cv_rmse": 5870.699652564026,
+          "cv_rmse_std": 1369.8161130300737,
+          "cv_r2": 0.9581529184143388,
+          "test_rmse": 7467.381824057225,
+          "test_mae": 6692.364094497289,
+          "test_r2": 0.8914234140042778
+        },
+        {
+          "model": "Gradient boosting",
+          "cv_rmse": 7839.852264950487,
+          "cv_rmse_std": 1743.172777240048,
+          "cv_r2": 0.922963858057131,
+          "test_rmse": 5487.216565604864,
+          "test_mae": 3983.0099759909895,
+          "test_r2": 0.9413721906227043
+        },
+        {
+          "model": "Random forest",
+          "cv_rmse": 7886.886807403328,
+          "cv_rmse_std": 909.6715718904469,
+          "cv_r2": 0.9239904064085241,
+          "test_rmse": 7258.508011415668,
+          "test_mae": 5177.219725299813,
+          "test_r2": 0.8974125614703657
+        },
+        {
+          "model": "Mean baseline",
+          "cv_rmse": 33852.604053060124,
+          "cv_rmse_std": 2788.098124526854,
+          "cv_r2": -0.26570754639626487,
+          "test_rmse": 26589.537684693096,
+          "test_mae": 24567.714285714286,
+          "test_r2": -0.3766420710287077
+        }
+      ],
+      "permutation_importance_r2_drop": {
+        "YearsExperience": 1.5816
+      },
+      "residual_sd": 7015.5599587306
+    }
+  }
+}
