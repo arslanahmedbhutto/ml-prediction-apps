@@ -4,9 +4,11 @@
 
 Three regression problems, one workflow: compare five models with cross-validation, keep the best, check it on a held-out test set, explain what drives it, and serve it in a Streamlit app with error ranges and an out-of-range warning.
 
-| GPA tab | House price tab |
+![GPA tab](docs/screenshots/gpa_tab.png)
+
+| House price tab | Salary tab |
 |---|---|
-| ![GPA](docs/screenshots/gpa_tab.jpg) | ![House](docs/screenshots/house_tab.jpg) |
+| ![House](docs/screenshots/house_tab.png) | ![Salary](docs/screenshots/salary_tab.png) |
 
 ## Results (held-out 20% test set)
 
